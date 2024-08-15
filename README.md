@@ -34,3 +34,30 @@ This repository contains the Machine Learning API used in a mobile application t
 1. **Install Dependencies**
    ```bash
    pip install -r fastapi_app/requirements.txt
+
+2. **Install Dependencies**
+  ```bash pip install -r fastapi_app/requirements.txt
+
+3. **Download the Model**
+  ```bash cd fastapi_app
+  py /app/download_model.py
+
+4. **Add Preprocessed Data**
+The games_preprocessed_embeddings.csv file is not included in this repository due to its size. You must download it from the provided link and place it in fastapi_app/app/ before running the application.
+
+Download Link: [Link to games_preprocessed_embeddings.csv](https://drive.google.com/file/d/1bx9BP1Pv14MsFI0RMSRGy7GCWwteXfKu/view?usp=sharing).
+
+5. **Run the API Locally**
+  ```bash uvicorn fastapi_app.app.main:app --reload
+
+
+## Deployment
+To test the deployed API, you can use the following Lambda link: [Lambda Endpoint] (https://ep4js2tqr3bhiy3m3xoqyydkim0qrvvg.lambda-url.eu-west-2.on.aws/docs#/default/suggestions_suggestions_post)
+
+## Notes
+- The games_preprocessed_embeddings.csv file is not included in this repository due to its size. Ensure this file is placed in fastapi_app/app/ before running the application.
+
+- For detailed information about the model, refer to the model/README.md.
+
+## Acknowledgments
+[FronkonGames Steam Games Scraper] (https://github.com/FronkonGames/Steam-Games-Scraper) for data collection. 
